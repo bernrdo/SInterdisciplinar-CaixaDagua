@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+      <style>
+         body,html {
+         font-family: 'Lato', sans-serif;
+         position: relative;
+         text-align: center;
+         display: table;
+         width: 100%;
+         height: 100%;
+         margin: 0;
+         padding: 0;
+         background: linear-gradient(180deg, #ADD8E6 98%, #368F8B 2%);
+         }
+         body {
+         position: relative;
+         display: table-cell;
+         vertical-align: middle;
+         }
+         h2 {
+         font-size: 30px;
+         }
+         p {
+         justify-content: center;
+         display: inline-block;
+         font-size: 30px;
+         }
+         table{
+         position: relative;
+         top: 0px;
+         bottom: 0px;
+         left: 0;
+         right: 0;
+         width: 30%;
+         height: 0%;
+         margin: auto;
+         font-size: 30px;
+         text-align: center;
+         padding: 50px;
+         border-collapse: collapse;
+         border: 1px solid black;
+         }
+         th, td {
+         border-collapse: collapse;
+         border: 1px solid black;
+         }
+         .Titulo{
+         position: absolute;
+         top:0px ;
+         bottom: 950px;
+         left: 0;
+         right: 0;
+         width: 50%;
+         height: 0%;
+         margin: auto;
+         font-size: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class = "Titulo">
+         <h1>Otimização de Caixa D'água</h1>
+      </div>
+      <p>Para o uso diário de {{volume_em_litros}} você vai precisar de uma caixa com as seguintes dimensões:</p>
+
+      <table>
+         <tr>
+            <td>Tamanho da caixa</td>
+         </tr>
+         <tr>
+            <td>
+               {{altura}} de altura, em metros
+            </td>
+         <tr>
+            <td>{{largura}} de largura, em metros</td>
+         </tr>
+         </tr>
+      </table>
+   </body>
+</html>
